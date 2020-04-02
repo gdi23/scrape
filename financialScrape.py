@@ -26,6 +26,6 @@ def finScrape(symbol):
         q = q + 5
     scrapeData = pd.DataFrame(data=scrapeData[1:,1:], index=scrapeData[1:,0], columns=scrapeData[0,1:])
 
-    print(scrapeData)
+    return scrapeData
 
-finScrape(symb)
+print(finScrape(symb))
